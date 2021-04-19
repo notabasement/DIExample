@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="vyN-e6-n3R">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="0cb-N8-J4r" customClass="DetailsViewController" customModule="DIExamplePresenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kfs-r6-ls9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-9P-5Vo">
+                                <rect key="frame" x="20" y="138" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-f0-Eay">
+                                <rect key="frame" x="20" y="235.5" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx1-f9-7w8">
+                                <rect key="frame" x="179" y="281.5" width="56" height="30"/>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="showDialog" destination="0cb-N8-J4r" eventType="touchUpInside" id="Bp2-pw-Ejw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeK-R0-F4y">
+                                <rect key="frame" x="149" y="361.5" width="116" height="30"/>
+                                <state key="normal" title="Open Blank View"/>
+                                <connections>
+                                    <action selector="openBlankView" destination="0cb-N8-J4r" eventType="touchUpInside" id="nlt-Ox-wob"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfZ-zs-xgy">
+                                <rect key="frame" x="186" y="194.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="szB-iS-A5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fAq-f0-Eay" firstAttribute="centerX" secondItem="kfs-r6-ls9" secondAttribute="centerX" id="8ka-wL-vnA"/>
+                            <constraint firstItem="eoc-9P-5Vo" firstAttribute="leading" secondItem="szB-iS-A5v" secondAttribute="leading" constant="20" id="Fds-H6-wy6"/>
+                            <constraint firstItem="szB-iS-A5v" firstAttribute="trailing" secondItem="eoc-9P-5Vo" secondAttribute="trailing" constant="20" id="Pkq-MR-1Nl"/>
+                            <constraint firstItem="gx1-f9-7w8" firstAttribute="centerX" secondItem="kfs-r6-ls9" secondAttribute="centerX" id="QPr-yc-PCW"/>
+                            <constraint firstItem="SfZ-zs-xgy" firstAttribute="centerX" secondItem="kfs-r6-ls9" secondAttribute="centerX" id="Sti-wQ-Y3O"/>
+                            <constraint firstItem="fAq-f0-Eay" firstAttribute="leading" secondItem="kfs-r6-ls9" secondAttribute="leadingMargin" id="VzC-cx-fb3"/>
+                            <constraint firstItem="gx1-f9-7w8" firstAttribute="top" secondItem="fAq-f0-Eay" secondAttribute="bottom" constant="25" id="bWX-Wr-6wj"/>
+                            <constraint firstItem="eoc-9P-5Vo" firstAttribute="top" secondItem="kfs-r6-ls9" secondAttribute="topMargin" constant="50" id="evj-a3-ka3"/>
+                            <constraint firstItem="TeK-R0-F4y" firstAttribute="centerX" secondItem="kfs-r6-ls9" secondAttribute="centerX" id="ns8-kf-eSV"/>
+                            <constraint firstItem="SfZ-zs-xgy" firstAttribute="top" secondItem="eoc-9P-5Vo" secondAttribute="bottom" constant="30" id="vQs-Bc-9Bm"/>
+                            <constraint firstItem="TeK-R0-F4y" firstAttribute="top" secondItem="gx1-f9-7w8" secondAttribute="bottom" constant="50" id="wy2-RK-AtX"/>
+                            <constraint firstItem="fAq-f0-Eay" firstAttribute="top" secondItem="SfZ-zs-xgy" secondAttribute="bottom" constant="20" id="xdh-gd-gyf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="6pb-iO-XWh"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="lastUpdatedLabel" destination="fAq-f0-Eay" id="cpL-VY-d4m"/>
+                        <outlet property="numChaptersLabel" destination="SfZ-zs-xgy" id="hrm-bj-HPg"/>
+                        <outlet property="titleLabel" destination="eoc-9P-5Vo" id="ZmL-7C-D8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nlv-60-f3w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="181"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
